@@ -4,8 +4,6 @@ pillow==10.4.0
 python-multipart
 requests
 
-# CPU-only PyTorch (NO CUDA)
-torch==2.2.2+cpu
-torchvision==0.17.2+cpu
-
 ultralytics
+torch
+torchvision
