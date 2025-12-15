@@ -4,10 +4,9 @@ pillow==10.4.0
 python-multipart
 requests
 
-# ---- FORCE CPU-ONLY TORCH (THIS IS THE KEY) ----
---index-url https://download.pytorch.org/whl/cpu
+# allow torch to be resolved from PyTorch CPU index
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch
 torchvision
 
-# -----------------------------------------------
 ultralytics
