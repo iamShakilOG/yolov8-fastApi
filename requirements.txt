@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-pillow==10.4.0
+pillow
 python-multipart
 requests
 
@@ -9,4 +9,3 @@ torch
 torchvision
 
 ultralytics
-opencv-python-headless==4.10.0.84
