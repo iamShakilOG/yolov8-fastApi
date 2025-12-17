@@ -115,11 +115,13 @@ async def auto_label_bbox(
 
         outputs.append(ann)
 
-    return {
-        "status": "success",
-        "count": len(outputs),
-        "results": outputs
-    }
+    # Supervisely expects ONE json per image
+    if len(outputs) == 1:
+        return outputs[0]
+
+    # If multiple images were uploaded, return list (no wrapper)
+    return outputs
+
 
 
 # ---------------------------------------------------------
