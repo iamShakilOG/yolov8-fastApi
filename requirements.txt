@@ -4,13 +4,9 @@ pillow==10.4.0
 python-multipart
 requests
 
-# Torch CPU only
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch
 torchvision
 
-# Force headless OpenCV
+ultralytics
 opencv-python-headless==4.10.0.84
-
-# Install ultralytics WITHOUT dependencies (CRITICAL)
-ultralytics --no-deps
